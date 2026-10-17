@@ -25,7 +25,7 @@ main{display:flex;flex-direction:column;min-width:0}.top{padding:18px 22px;borde
 </div>
 <script>
 /* Setelah menjalankan Cloudflare Tunnel, ganti URL ini dengan URL HTTPS yang diberikan cloudflared. */
-const API_URL = " https://pushed-tramadol-per-began.trycloudflare.com ";
+const API_URL = "https://pushed-tramadol-per-began.trycloudflare.com";
 const chat=document.getElementById("chat"),form=document.getElementById("form"),input=document.getElementById("input"),send=document.getElementById("send");
 const history=[];
 function add(role,text){const row=document.createElement("div");row.className="msg "+(role==="user"?"user":"");const av=document.createElement("div");av.className="avatar";av.textContent=role==="user"?"🙂":"☕";const b=document.createElement("div");b.className="bubble";b.textContent=text;row.append(av,b);chat.append(row);chat.scrollTop=chat.scrollHeight;return row}
